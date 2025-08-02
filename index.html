@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertiMedic - Innovación en Salud Laboral y Peritaje Médico con IA</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="https://img.icons8.com/color/48/verified-account.png" type="image/png">
+
+
+    <style>
+        /* Aplicamos la fuente Poppins a todo el cuerpo del documento */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Estilo para el fondo del Hero con un degradado sutil */
+        .hero-background {
+            background-color: #f8fafc; /* Color de fondo de respaldo */
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgb(221, 239, 250) 0%, rgba(255,255,255,0) 25%),
+                radial-gradient(circle at 80% 90%, rgb(214, 239, 249) 0%, rgba(255,255,255,0) 30%);
+        }
+        
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-900">
+                CertiMedic<span class="text-sky-600">.</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#solucion" class="text-slate-600 hover:text-sky-600 transition duration-300">Nuestra Solución</a>
+                <a href="#beneficios" class="text-slate-600 hover:text-sky-600 transition duration-300">Beneficios</a>
+                <a href="#contacto" class="bg-sky-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-sky-700 transition duration-300 shadow-lg hover:shadow-xl">Solicitar Demo</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-slate-800 focus:outline-none">
+                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#solucion" class="block py-2 px-4 text-sm text-slate-600 hover:bg-sky-50">Nuestra Solución</a>
+            <a href="#beneficios" class="block py-2 px-4 text-sm text-slate-600 hover:bg-sky-50">Beneficios</a>
+            <a href="#contacto" class="block py-2 px-4 text-sm text-sky-600 font-semibold hover:bg-sky-50">Solicitar Demo</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-background relative">
+            <div class="container mx-auto px-6 py-24 md:py-32 flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                        La Revolución de la IA en <span class="text-sky-600">Salud Laboral y Peritaje</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                        Transformamos la valoración del daño corporal y la gestión de bajas con tecnología de vanguardia. Gane eficiencia, objetividad y precisión.
+                    </p>
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#contacto" class="bg-sky-600 text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-sky-700 transition duration-300 shadow-xl hover:scale-105 transform">
+                            Quiero una Demo Gratuita
+                        </a>
+                        <a href="#solucion" class="bg-transparent text-sky-600 font-semibold px-8 py-4 rounded-full hover:bg-sky-50 transition duration-300 border border-sky-600">
+                            Descubrir la solución
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-12 lg:mt-0">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" alt="Doctor analizando datos en una tablet" class="rounded-lg shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <section id="problema" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900">El Reto Actual en la Gestión Médico-Legal</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Su organización se enfrenta a procesos lentos, costosos y subjetivos. La falta de tecnología integrada crea cuellos de botella que impactan directamente en su rentabilidad y eficiencia.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-8 border border-slate-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-3 text-slate-900">Ineficiencia Operativa</h3>
+                        <p class="text-slate-600">Procesos manuales, informes interminables y tiempos de espera prolongados que consumen recursos valiosos.</p>
+                    </div>
+                    <div class="p-8 border border-slate-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-3 text-slate-900">Subjetividad en la Valoración</h3>
+                        <p class="text-slate-600">Las evaluaciones dependen en gran medida del criterio individual, generando inconsistencias y potenciales litigios.</p>
+                    </div>
+                    <div class="p-8 border border-slate-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-3 text-slate-900">Falta de Integración</h3>
+                        <p class="text-slate-600">Sistemas aislados que no se comunican entre sí, dificultando una visión global y la toma de decisiones basada en datos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="solucion" class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=1932&auto=format&fit=crop" alt="Peritaje médico y tecnología" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="lg:w-1/2">
+                     <span class="font-semibold text-sky-600">NUESTRA SOLUCIÓN</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Precisión y Eficiencia con Inteligencia Artificial</h2>
+                    <p class="mt-4 text-lg text-slate-600"><strong>CertiMedic</strong> es una plataforma inteligente que utiliza modelos de IA avanzados para analizar documentación médica y legal, automatizar la extracción de datos clave y ofrecer un soporte objetivo a la decisión.</p>
+                    <ul class="mt-6 space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="text-slate-600"><strong>Análisis Inteligente de Documentos:</strong> Procesamos informes, historiales y baremos en segundos, no en horas.</span>
+                        </li>
+                        <li class="flex items-start">
+                             <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="text-slate-600"><strong>Reducción de la Subjetividad:</strong> Nuestro sistema ofrece recomendaciones basadas en datos, estandarizando la valoración del daño corporal.</span>
+                        </li>
+                        <li class="flex items-start">
+                           <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="text-slate-600"><strong>Integración Total:</strong> Conectamos con sus sistemas existentes (ERP, CRM) para un flujo de trabajo sin fricciones.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                     <span class="font-semibold text-sky-600">RESULTADOS MEDIBLES</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">Diseñado para Aseguradoras, Empresas y Peritos</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Nuestra plataforma no es solo tecnología, es una ventaja competitiva.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-slate-50 p-8 rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900">Para Aseguradoras</h3>
+                        <p class="mt-2 text-slate-600">Reduzca los costes de litigios y acelere la resolución de siniestros. Mejore la precisión en la provisión de fondos y la satisfacción del cliente.</p>
+                    </div>
+                     <div class="bg-slate-50 p-8 rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900">Para Empresas</h3>
+                        <p class="mt-2 text-slate-600">Optimice la gestión del absentismo laboral, identifique patrones y tome decisiones proactivas para mejorar la salud y productividad de su plantilla.</p>
+                    </div>
+                     <div class="bg-slate-50 p-8 rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900">Para Peritos Médicos</h3>
+                        <p class="mt-2 text-slate-600">Aumente su capacidad de trabajo y la calidad de sus informes. Conviértase en un referente del sector con la ayuda de la IA como su asistente experto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacto" class="bg-slate-800 text-white">
+            <div class="container mx-auto px-6 py-20">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="pr-8">
+                        <h2 class="text-3xl md:text-4xl font-bold">Dé el Primer Paso Hacia la Innovación</h2>
+                        <p class="mt-4 text-lg text-slate-300">
+                           Nuestra experiencia médica, legal y tecnológica nos posiciona como su partner ideal. Rellene el formulario y un especialista se pondrá en contacto para una demostración personalizada y sin compromiso.
+                        </p>
+                        <div class="mt-8">
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop" class="rounded-lg shadow-lg" alt="Equipo de profesionales en una reunión">
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white text-slate-800 p-8 rounded-lg shadow-2xl">
+                        <h3 class="text-2xl font-bold mb-6">Solicite su Demo Personalizada</h3>
+                        <form action="#" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700">Nombre completo</label>
+                                <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-2 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                            </div>
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-slate-700">Empresa / Organización</label>
+                                <input type="text" name="company" id="company" class="mt-1 block w-full px-4 py-2 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-700">Email de contacto</label>
+                                <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-2 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate-700">Teléfono (Opcional)</label>
+                                <input type="tel" name="phone" id="phone" class="mt-1 block w-full px-4 py-2 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                            </div>
+                             <div>
+                                <label for="message" class="block text-sm font-medium text-slate-700">¿Cuál es su mayor reto actualmente?</label>
+                                <textarea name="message" id="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-slate-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-sky-600 text-white font-bold py-3 px-6 rounded-md hover:bg-sky-700 transition duration-300 shadow-lg">
+                                    Enviar Solicitud
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 CertiMedic - Todos los derechos reservados.</p>
+            <p class="mt-2 text-sm">Una solución innovadora para la gestión médico-legal.</p>
+            <p class="mt-4 text-sm">Email de Contacto: <a href="mailto:9129mtorres@gmail.com" class="hover:text-sky-400">9129mtorres@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el menú móvil
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
